@@ -14,7 +14,7 @@ pipeline {
         }
         stage('dire') {
             steps {
-                dir('cd /root/one') {
+                dir('/root/one') {
                     sh 'rm -rf *;git clone https://github.com/thippeswamy24/jenkins-terraform.git'
                 }
             }
