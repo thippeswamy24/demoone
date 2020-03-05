@@ -14,6 +14,6 @@ pipeline {
         }
       stage('terraform started') {
             steps {
-    sh 'git clone https://github.com/thippeswamy24/jenkins-terraform.git'
+               sh 'git clone https://github.com/thippeswamy24/jenkins-terraform.git'
             }
         }
