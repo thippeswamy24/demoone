@@ -19,7 +19,7 @@ pipeline {
                     
                     sh 'rm -rf *;git clone https://github.com/thippeswamy24/jenkins-terraform.git'
                     
-                    sh 'sudo mv -v /var/lib/jenkins/workspace/swamy/jenkins-terraform /home/ec2-user/one'
+                    sh 'mv -v /var/lib/jenkins/workspace/swamy/jenkins-terraform /home/ec2-user/one'
                // }
             }
         }
