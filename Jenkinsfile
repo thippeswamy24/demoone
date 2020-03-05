@@ -12,8 +12,13 @@ pipeline {
                 sh 'echo "Started...!" '
             }
         }
+        stage('dire'){
+        dir('cd /opt/') {
+            sh '$pwd'
+        }
+}
         
-        stage('git clone') {
+   /*     stage('git clone') {
             steps {
                 sh 'rm -r *;git clone https://github.com/thippeswamy24/jenkins-terraform.git'
             }
@@ -38,7 +43,7 @@ pipeline {
                 sh 'echo "Ended....!!"'
             }
         }
-
+*/
         
     }
 }
