@@ -13,10 +13,10 @@ pipeline {
             }
         }
         stage('dire'){
-        dir('cd /opt/') {
-            sh '$pwd'
+            dir('cd /opt/') {
+                sh '$pwd'
+            }
         }
-}
         
    /*     stage('git clone') {
             steps {
