@@ -13,8 +13,10 @@ pipeline {
             }
         }
         stage('dire') {
-            dir('/opt/') {
-                sh '$pwd'
+            steps {
+                dir('/opt/') {
+                    sh '$pwd'
+                }
             }
         }
         
