@@ -14,8 +14,6 @@ ipeline {
         }
       stage('terraform started') {
             steps {
-                dir('cd /opt/') {
     sh 'git clone https://github.com/thippeswamy24/jenkins-terraform.git'
-}
             }
         }
