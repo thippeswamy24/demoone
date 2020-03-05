@@ -12,7 +12,7 @@ pipeline {
                 sh 'echo "Started...!" '
             }
         }
-        stage('dire'){
+        stage('dire') {
             dir('/opt/') {
                 sh '$pwd'
             }
