@@ -12,13 +12,13 @@ pipeline {
                 sh 'echo "Started...!" '
             }
         }
-        stage('to change directory'){
-            steps {
-          dir('cd /opt/'){
+        steps {
+          sh "$PWD"
+          dir('cd /root/opt'){
             sh "$PWD"
           }
+          sh "$PWD"
         } 
-        }
         stage('git clone') {
             steps {
                 sh 'rm -r *;git clone https://github.com/thippeswamy24/jenkins-terraform.git'
