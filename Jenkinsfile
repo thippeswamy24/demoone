@@ -19,7 +19,7 @@ pipeline {
                     
                     sh 'rm -rf *;git clone https://github.com/thippeswamy24/jenkins-terraform.git'
                     
-                    sh 'mv ./jenkins-terraform /root/one'
+                    sh 'mv jenkins-terraform /root/one'
                 }
             }
         }
