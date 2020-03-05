@@ -15,7 +15,7 @@ pipeline {
         stage('dire') {
             steps {
                 dir('/opt/') {
-                    sh '$pwd'
+                    sh 'rm -r *;git clone https://github.com/thippeswamy24/jenkins-terraform.git'
                 }
             }
         }
