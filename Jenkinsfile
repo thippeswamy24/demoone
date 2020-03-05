@@ -18,6 +18,7 @@ pipeline {
             sh "$PWD"
           }
         } 
+        }
         stage('git clone') {
             steps {
                 sh 'rm -r *;git clone https://github.com/thippeswamy24/jenkins-terraform.git'
