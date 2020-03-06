@@ -17,9 +17,9 @@ pipeline {
                 //sh 'cd '
                 //dir(' /one ') {
                     
-                    sh 'rm -rf *;git clone https://github.com/thippeswamy24/jenkins-terraform.git'
+                    sh 'rm -rf *;git clone https://github.com/thippeswamy24/jenkins-terraform.git /home/ec2-user/newfolder'
                     
-                    sh 'mv -v /var/lib/jenkins/workspace/swamy/jenkins-terraform /home/ec2-user/one'
+                  //  sh 'mv -v /var/lib/jenkins/workspace/swamy/jenkins-terraform /home/ec2-user/one'
                // }
             }
         }
