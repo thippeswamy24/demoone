@@ -16,8 +16,8 @@ pipeline {
             steps {
                 //sh 'cd '
                 //dir(' /one ') {
-                    
-                    sh 'rm -rf *;git clone https://github.com/thippeswamy24/jenkins-terraform.git /home/ec2-user/newfolder'
+                    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: '/home/ec2-user/newfolder']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/thippeswamy24/demoone.git']]])
+                   // sh 'rm -rf *;git clone https://github.com/thippeswamy24/jenkins-terraform.git /home/ec2-user/newfolder'
                     
                   //  sh 'mv -v /var/lib/jenkins/workspace/swamy/jenkins-terraform /home/ec2-user/one'
                // }
