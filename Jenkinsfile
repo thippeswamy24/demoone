@@ -15,6 +15,7 @@ pipeline {
         stage('dire') {
             steps {
                 sh 'sudo rm -rf /home/ec2-user/newdirectory/*'
+                sh 'sudo rm -rf /home/ec2-user/newdirectory/.git'
                 sh 'sudo rm -rf *;sudo git clone https://github.com/thippeswamy24/jenkins-terraform.git /home/ec2-user/newdirectory'
                 //sh 'cd '
                 //dir(' /one ') {
